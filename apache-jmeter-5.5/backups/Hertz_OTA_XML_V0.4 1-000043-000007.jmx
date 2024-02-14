@@ -1,0 +1,3042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Hertz_OTA_XML_V0.4" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">true</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <CounterConfig guiclass="CounterConfigGui" testclass="CounterConfig" testname="Counter" enabled="true">
+        <stringProp name="CounterConfig.start">1</stringProp>
+        <stringProp name="CounterConfig.end">100</stringProp>
+        <stringProp name="CounterConfig.incr">1</stringProp>
+        <stringProp name="CounterConfig.name">iteration</stringProp>
+        <stringProp name="CounterConfig.format"></stringProp>
+        <boolProp name="CounterConfig.per_user">false</boolProp>
+      </CounterConfig>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">https</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="host" elementType="Argument">
+            <stringProp name="Argument.name">host</stringProp>
+            <stringProp name="Argument.value">vv.xqual.hertz.com</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="portNumber" elementType="Argument">
+            <stringProp name="Argument.name">portNumber</stringProp>
+            <stringProp name="Argument.value">443</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Dyna_ThinkTime1" elementType="Argument">
+            <stringProp name="Argument.name">Dyna_ThinkTime1</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="Dyna_ThinkTime2" elementType="Argument">
+            <stringProp name="Argument.name">Dyna_ThinkTime2</stringProp>
+            <stringProp name="Argument.value">500</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TestDataPath" elementType="Argument">
+            <stringProp name="Argument.name">TestDataPath</stringProp>
+            <stringProp name="Argument.value">C:\Users\LakshmiBoini-Kairos\OneDrive - Kairos Technologies Inc\Desktop\TestData_OTA_XML\Data1</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_00" elementType="Argument">
+            <stringProp name="Argument.name">TS_00</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_01" elementType="Argument">
+            <stringProp name="Argument.name">TS_01</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_02" elementType="Argument">
+            <stringProp name="Argument.name">TS_02</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_03" elementType="Argument">
+            <stringProp name="Argument.name">TS_03</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_04" elementType="Argument">
+            <stringProp name="Argument.name">TS_04</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_05" elementType="Argument">
+            <stringProp name="Argument.name">TS_05</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_06" elementType="Argument">
+            <stringProp name="Argument.name">TS_06</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_07" elementType="Argument">
+            <stringProp name="Argument.name">TS_07</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_08" elementType="Argument">
+            <stringProp name="Argument.name">TS_08</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_09" elementType="Argument">
+            <stringProp name="Argument.name">TS_09</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_10" elementType="Argument">
+            <stringProp name="Argument.name">TS_10</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="TS_11" elementType="Argument">
+            <stringProp name="Argument.name">TS_11</stringProp>
+            <stringProp name="Argument.value">100</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <BeanShellPreProcessor guiclass="TestBeanGUI" testclass="BeanShellPreProcessor" testname="BeanShell PreProcessor" enabled="true">
+        <stringProp name="filename"></stringProp>
+        <stringProp name="parameters"></stringProp>
+        <boolProp name="resetInterpreter">false</boolProp>
+        <stringProp name="script">import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+
+Calendar calendar = Calendar.getInstance();
+SimpleDateFormat dateFormat = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+
+calendar.add(Calendar.DAY_OF_WEEK, (Calendar.MONDAY - calendar.get(Calendar.DAY_OF_WEEK) + 7) % 7);
+String nextMonday = dateFormat.format(calendar.getTime());
+
+calendar.add(Calendar.DAY_OF_WEEK, (Calendar.FRIDAY - calendar.get(Calendar.DAY_OF_WEEK) + 7) % 7);
+String nextFriday = dateFormat.format(calendar.getTime());
+
+
+vars.put(&quot;nextMonday&quot;, nextMonday);
+vars.put(&quot;nextFriday&quot;, nextFriday);
+
+log.info(&quot;*********************************&quot;+nextMonday);
+log.info(&quot;*********************************&quot;+nextFriday);</stringProp>
+      </BeanShellPreProcessor>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_00_SimpleRateRequest" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_00}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_00_TC_01_SimpleRateRequest" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_00_TC_01_SimpleRateRequest.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_00_SimpleRateRequest---${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_00_TC_01_SimpleRateRequest" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;2&quot;&gt;&#xd;
+              &lt;POS&gt;&#xd;
+                             &lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+                                           &lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+                                                          &lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+                                           &lt;/RequestorID&gt;&#xd;
+                             &lt;/Source&gt;&#xd;
+                             &lt;Source&gt;&#xd;
+                                           &lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+                             &lt;/Source&gt;&#xd;
+              &lt;/POS&gt;&#xd;
+              &lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+                             &lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt; &#xd;
+                                           &lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+                                           &lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+                             &lt;/VehRentalCore&gt;&#xd;
+                                           &lt;/VehAvailRQCore&gt;&#xd;
+                            &lt;/OTA_VehAvailRateRQ&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port"></stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">${__timeShift(yyyy-MM-dd&apos;T&apos;HH:mm:ss,,P2D,,)}      ${__timeShift(yyyy-MM-dd&apos;T&apos;HH:mm:ss,,P4D,,)}   ISOCountry	AgentDutyCode	VendorId	CodeContext	IATAID	PickUpLocation	ReturnLocation
+</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_01_RateRequest_TourWithSipp" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_01}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_01_TC_01_RateRequest_TourWithSipp" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_01_TC_01_RateRequest_TourWithSipp.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_VehPrefCode,p_TourNumber</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_01_TC_01_RateRequest_TourWithSipp--${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_01_TC_01_RateRequest_TourWithSipp" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;2&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt; &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+			&lt;VehPrefs&gt;&#xd;
+				&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt; &#xd;
+				&lt;/VehPref&gt;&#xd;
+			&lt;/VehPrefs&gt;&#xd;
+						&lt;/VehAvailRQCore&gt;&#xd;
+	&lt;VehAvailRQInfo&gt;&#xd;
+			&lt;TourInfo TourNumber=&quot;${p_TourNumber}&quot;/&gt;&#xd;
+	&lt;/VehAvailRQInfo&gt;&#xd;
+	&lt;/OTA_VehAvailRateRQ&gt;&#xd;
+&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_02_Rate Request_CDP_Sipp_Promo_Loyalty" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_02}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_02_TC_01_Rate Request_CDP_Sipp_Promo_Loyalty" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_02_TC_01_RateRequest_CDP_Sipp_Promo_Loyalty.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_VehPrefCode,p_DiscountNumber,p_PromotionCode,p_MembershipID</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_02_TC_01_Rate Request_CDP_Sipp_Promo_Loyalty---${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_02_TC_01_Rate Request_CDP_Sipp_Promo_Loyalty" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;2&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+			&lt;VehPrefs&gt;&#xd;
+				&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt;  &#xd;
+				&lt;/VehPref&gt;&#xd;
+			&lt;/VehPrefs&gt;&#xd;
+			&lt;RateQualifier TravelPurpose=&quot;2&quot; CorpDiscountNmbr=&quot;${p_DiscountNumber}&quot; PromotionCode=&quot;${p_PromotionCode}&quot;/&gt;&#xd;
+			&lt;/VehAvailRQCore&gt;&#xd;
+	&lt;VehAvailRQInfo&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+			&lt;Primary&gt;&#xd;
+				&lt;CustLoyalty MembershipID=&quot;${p_MembershipID}&quot; ProgramID=&quot;ZE&quot; TravelSector=&quot;2&quot;/&gt;&#xd;
+			&lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+			&lt;/VehAvailRQInfo&gt;&#xd;
+	&lt;/OTA_VehAvailRateRQ&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_03_RateRequest_RR_PseudoCar" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_03}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_03_TC_01_RateRequest_RR_PseudoCar" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_03_TC_01_RateRequest_RR_PseudoCar.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry(Source),p_AgentDutyCode,p_VendorId,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_VehPref</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_03_TC_01_RateRequest_RR_PseudoCar---${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_03_TC_01_RateRequest_RR_PseudoCar" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;20&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry(Source)}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VendorId}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+	&lt;VehPrefs&gt;&#xd;
+				&lt;VehPref Code=&quot;${p_VehPref}&quot; CodeContext=&quot;SIPP&quot;&gt; &#xd;
+				&lt;/VehPref&gt;&#xd;
+			&lt;/VehPrefs&gt;&#xd;
+									&lt;/VehAvailRQCore&gt;&#xd;
+	&lt;VehAvailRQInfo&gt;&#xd;
+					&lt;/VehAvailRQInfo&gt;&#xd;
+	&lt;/OTA_VehAvailRateRQ&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">I</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_04_RateRequest_TourWithSipp" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_04}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_04_TC_01_RateRequest_TourWithSipp" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_04_TC_01_RateRequest_TourWithSipp.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_VehPrefCode,p_TourNumber</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_04_TC_02_ReferenceSell_TourWithSipp" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_04_TC_02_Reference Sell_TourWithSipp.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname,p_VoucherSeriesCode</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_04_TC_02_Cancel_TourWithSipp" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_04_TC_03_Cancel_TourWithSipp.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_04_TC_01_RateRequest_TourWithSipp---${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TC_01_RateRequestTS_04_TC_01_RateRequest_TourWithSipp" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;2&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt; &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+			&lt;VehPrefs&gt;&#xd;
+				&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt; &#xd;
+				&lt;/VehPref&gt;&#xd;
+			&lt;/VehPrefs&gt;&#xd;
+						&lt;/VehAvailRQCore&gt;&#xd;
+	&lt;VehAvailRQInfo&gt;&#xd;
+			&lt;TourInfo TourNumber=&quot;${p_TourNumber}&quot;/&gt;&#xd;
+	&lt;/VehAvailRQInfo&gt;&#xd;
+	&lt;/OTA_VehAvailRateRQ&gt;&#xd;
+&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpDateTime,p_ReturnDateTime,p_PickUpLocation,p_ReturnLocation,p_VehPrefCode,p_TourNumber</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="C_Requestor_ID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">C_Requestor_ID</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;Reference Type=&quot;16&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">C_Requestor_ID_Not_Found</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_04_TC_02_ReferenceSell_TourWithSipp---${iteration}" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_04_TC_02_ReferenceSell_TourWithSipp" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_04_TC_02_ReferenceSell_TourWithSipp" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt; &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				 				  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+				&lt;/VehResRQCore&gt;&#xd;
+	&lt;VehResRQInfo&gt;&#xd;
+		&lt;RentalPaymentPref&gt;&#xd;
+						&lt;Voucher SeriesCode=&quot;${p_VoucherSeriesCode}&quot;/&gt;&#xd;
+		&lt;/RentalPaymentPref&gt;&#xd;
+		&lt;Reference Type=&quot;16&quot; ID=&quot;${C_Requestor_ID}&quot;/&gt;&#xd;
+		&lt;/VehResRQInfo&gt;&#xd;
+&lt;/OTA_VehResRQ&gt;&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpDateTime,p_ReturnDateTime,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname,p_VoucherSeriesCode</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="C_ConfigID" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">C_ConfigID</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">C_ConfigID_Not_Found</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="TestPlan.comments">C_ConfigID</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+                <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_04_TC_03_Cancel_TourWithSipp---${iteration}" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_04_TC_03_Cancel_TourWithSipp" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_04_TC_03_Cancel_TourWithSipp" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+		&lt;UniqueID Type=&quot;14&quot; ID=&quot;${C_ConfigID}&quot;/&gt;&#xd;
+&quot;/&gt;&#xd;
+		&lt;PersonName&gt;&#xd;
+			&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+		&lt;/PersonName&gt;&#xd;
+	&lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+                <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_05_RateRequest_CDP_Sipp_Promo_Loyalty" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_05}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_05_TC_01_RateRequest_CDP_Sipp_Promo_Loyalty" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_05_TC_01_Rate Request_CDP_Sipp_Promo_Loyalty.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_VehPrefCode,p_DiscountNumber,p_PromotionCode,p_MembershipID</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_05_TC_02_ReferenceSell_CDP_Sipp_Promo_Loyalty" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_05_TC_02_ReferenceSell_CDP_Sipp_Promo_Loyalty.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p1_ISOCountry(Source),p1_AgentDutyCode,p1_VendorId,p1_CodeContext,p1_IATAID,p1_PickUpLocation,p1_ReturnLocation,p1_GivenName,p1_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+          <stringProp name="TestPlan.comments">p_ISOCountry(Source),p_AgentDutyCode,p_VendorId,p_CodeContext,p_IATAID,p_PickUpDateTime,p_ReturnDateTime,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname
+
+p1_ISOCountry(Source),p1_AgentDutyCode,p1_VendorId,p1_CodeContext,IATAID,`p1_PickUpLocation,p1_ReturnLocation,p1_GivenName,p1_Surname</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_05_TC_03_Cancel_CDP_Sipp_Promo_Loyalty" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_05_TC_03_Cancel_CDP_Sipp_Promo_Loyalty.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_05_TC_01_RateRequest_CDP_Sipp_Promo_Loyalty" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_05_TC_01_RateRequest_CDP_Sipp_Promo_Loyalty" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;2&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+			&lt;VehPrefs&gt;&#xd;
+				&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt;  &#xd;
+				&lt;/VehPref&gt;&#xd;
+			&lt;/VehPrefs&gt;&#xd;
+			&lt;RateQualifier TravelPurpose=&quot;2&quot; CorpDiscountNmbr=&quot;${p_DiscountNumber}&quot; PromotionCode=&quot;${p_PromotionCode}&quot;/&gt;&#xd;
+			&lt;/VehAvailRQCore&gt;&#xd;
+	&lt;VehAvailRQInfo&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+			&lt;Primary&gt;&#xd;
+				&lt;CustLoyalty MembershipID=&quot;${p_MembershipID}&quot; ProgramID=&quot;ZE&quot; TravelSector=&quot;2&quot;/&gt;&#xd;
+			&lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+			&lt;/VehAvailRQInfo&gt;&#xd;
+	&lt;/OTA_VehAvailRateRQ&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="C_Requestor_ID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">C_Requestor_ID</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;Reference Type=&quot;16&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">C_Requestor_ID_Not_Found</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_05_TC_02_ReferenceSell_CDP_Sipp_Promo_Loyalty" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_05_TC_02_ReferenceSell_CDP_Sipp_Promo_Loyalty" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_05_TC_01_RateRequest_CDP_Sipp_Promo_Loyalty" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p1_ISOCountry(Source)}&quot; AgentDutyCode=&quot;${p1_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p1_VendorId}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p1_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p1_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt; &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p1_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p1_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p1_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p1_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				 				  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+				&lt;/VehResRQCore&gt;&#xd;
+	&lt;VehResRQInfo&gt;&#xd;
+				&lt;Reference Type=&quot;16&quot; ID=&quot;${C_Requestor_ID}&quot;/&gt;&#xd;
+		&lt;/VehResRQInfo&gt;&#xd;
+&lt;/OTA_VehResRQ&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p1_ISOCountry(Source),p1_AgentDutyCode,p1_VendorId,p1_CodeContext,p1_IATAID,p1_PickUpLocation,p1_ReturnLocation,p1_GivenName,p1_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="C_ConfigID" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">C_ConfigID</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">C_ConfigID_Not_Found</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+                <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_05_TC_03_Cancel_CDP_Sipp_Promo_Loyalty" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_05_TC_03_Cancel_CDP_Sipp_Promo_Loyalty" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_05_TC_03_Cancel_CDP_Sipp_Promo_Loyalty" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+		&lt;UniqueID Type=&quot;14&quot; ID=&quot;${C_ConfigID}&quot;/&gt;&#xd;
+&quot;/&gt;&#xd;
+		&lt;PersonName&gt;&#xd;
+			&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+		&lt;/PersonName&gt;&#xd;
+	&lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_06_RateRequest_PseudoCar" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_06}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_06_TC_01_RateRequest_PseudoCar" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_06_TC_01_RateRequest_RR_PseudoCar.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry(Source),p_AgentDutyCode,p_VendorId,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_VehPref</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_06_TC_02_Reference_PseudoCar" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_06_TC_02_ReferenceSell_PseudoCar.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry(Source),p_AgentDutyCode,p_VendorId,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_03_TC_01_Cancel_PseudoCar" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_06_TC_03_Cancel_PseudoCar.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_06_TC_01_RateRequest_PseudoCar---${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_06_TC_01_RateRequest_PseudoCar" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;20&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry(Source)}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VendorId}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+	&lt;VehPrefs&gt;&#xd;
+				&lt;VehPref Code=&quot;${p_VehPref}&quot; CodeContext=&quot;SIPP&quot;&gt; &#xd;
+				&lt;/VehPref&gt;&#xd;
+			&lt;/VehPrefs&gt;&#xd;
+									&lt;/VehAvailRQCore&gt;&#xd;
+	&lt;VehAvailRQInfo&gt;&#xd;
+					&lt;/VehAvailRQInfo&gt;&#xd;
+	&lt;/OTA_VehAvailRateRQ&gt;&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">p_ISOCountry(Source),p_AgentDutyCode,p_VendorId,p_CodeContext,p_IATAID,p_PickUpDateTime,p_ReturnDateTime,p_PickUpLocation,p_ReturnLocation,p_VehPref</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="C_Requestor_ID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">C_Requestor_ID</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;Reference Type=&quot;16&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">C_Requestor_ID_Not_Found</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">16</intProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_06_TC_02_Reference_PseudoCar---${iteration}" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_06_TC_02_Reference_PseudoCar" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_06_TC_02_Reference_PseudoCar" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+		&lt;Source ISOCountry=&quot;${p_ISOCountry(Source)}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VendorId}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt; &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				 				  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+				&lt;/VehResRQCore&gt;&#xd;
+	&lt;VehResRQInfo&gt;&#xd;
+				&lt;Reference Type=&quot;16&quot; ID=&quot;${C_Requestor_ID}&quot;/&gt;&#xd;
+		&lt;/VehResRQInfo&gt;&#xd;
+&lt;/OTA_VehResRQ&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry(Source),p_AgentDutyCode,p_VendorId,p_CodeContext,p_IATAID,p_PickUpDateTime,p_ReturnDateTime,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="C_ConfigID" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">C_ConfigID</stringProp>
+                <stringProp name="RegexExtractor.regex">&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">C_ConfigID_Not_Found</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+                <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_06_TC_03_Cancel_PseudoCar---${iteration}" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_06_TC_03_Cancel_PseudoCar" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_06_TC_03_Cancel_PseudoCar" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+	&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+		&lt;UniqueID Type=&quot;14&quot; ID=&quot;${C_ConfigID}&quot;/&gt;&#xd;
+&quot;/&gt;&#xd;
+		&lt;PersonName&gt;&#xd;
+			&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+		&lt;/PersonName&gt;&#xd;
+	&lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-891218439">&lt;Success&gt;&lt;/Success</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">16</intProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+            <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+              <intProp name="ActionProcessor.action">1</intProp>
+              <intProp name="ActionProcessor.target">0</intProp>
+              <stringProp name="ActionProcessor.duration">0</stringProp>
+            </TestAction>
+            <hashTree>
+              <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+                <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+                <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+              </UniformRandomTimer>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_07_RateRequest_DollarBrand" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_07}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_07_TC_01_RateRequest_DollarBrand" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_07_TC_01_RateRquest_DollarBrand.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_ID_ZR/ZT,p_PickUpLocation,p_ReturnLocation,p_VehPrefCode</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_07_TC_02_Reference_DollarBrand" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_07_TC_02_ReferenceSell_DollarBrand.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_ID_ZR/ZT,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_07_TC_03_Cancel_DollarBrand" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_07_TC_03_Cancel_DollarBrand.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_07_TC_01_RateRequest_DollarBrand--${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_07_TC_01_RateRequest_DollarBrand" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehAvailRateRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehAvailRateRQ.xsd&quot; Version=&quot;1.008&quot; MaxResponses=&quot;20&quot;&gt;&#xd;
+		&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;8&quot; ID=&quot;${p_ID_ZR/ZT}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehAvailRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+	&lt;VehPrefs&gt;&#xd;
+				&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt; &#xd;
+				&lt;/VehPref&gt;&#xd;
+			&lt;/VehPrefs&gt;&#xd;
+		&lt;/VehAvailRQCore&gt;&#xd;
+	&lt;/OTA_VehAvailRateRQ&gt;&#xd;
+&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_ID_ZR/ZT,p_PickUpDateTime,p_ReturnDateTime,p_PickUpLocation,p_ReturnLocation,p_VehPrefCode</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="c_referenceId" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">c_referenceId</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;Reference Type=&quot;16&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">c_referenceId_NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_07_TC_02_ReferenceSell_DollarBrand" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_07_TC_02_ReferenceSell_DollarBrand" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_07_TC_02_ReferenceSell_DollarBrand" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+		&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode} &quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;8&quot; ID=&quot;${p_ID_ZR/ZT}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+&#xd;
+	&lt;/POS&gt;&#xd;
+	&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt; &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				 				  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+				&lt;/VehResRQCore&gt;&#xd;
+	&lt;VehResRQInfo&gt;&#xd;
+				&lt;Reference Type=&quot;16&quot; ID=&quot;${c_referenceId}&quot;/&gt;&#xd;
+		&lt;/VehResRQInfo&gt;&#xd;
+&lt;/OTA_VehResRQ&gt;&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_ID_ZR/ZT,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="c_confId" enabled="true">
+                <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+                <stringProp name="RegexExtractor.refname">c_confId</stringProp>
+                <stringProp name="RegexExtractor.regex">re&gt;&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+                <stringProp name="RegexExtractor.template">$1$</stringProp>
+                <stringProp name="RegexExtractor.default">c_confId_Not_Found</stringProp>
+                <stringProp name="RegexExtractor.match_number">1</stringProp>
+                <stringProp name="Sample.scope">all</stringProp>
+              </RegexExtractor>
+              <hashTree/>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+                <stringProp name="Assertion.scope">all</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_07_TC_03_Cancel_DollarBrand" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_07_TC_03_Cancel_DollarBrand" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_07_TC_03_Cancel_DollarBrand" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+    &lt;POS&gt;&#xd;
+    &lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+            &lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+                &lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+            &lt;/RequestorID&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+        &lt;Source&gt;&#xd;
+            &lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+       &lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;8&quot; ID=&quot;ZR&quot;/&gt;&#xd;
+	&lt;/Source&gt;&#xd;
+    &lt;/POS&gt;&#xd;
+    &lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+        &lt;UniqueID Type=&quot;14&quot; ID=&quot;${c_confId}&quot;/&gt;&#xd;
+        &lt;PersonName&gt;&#xd;
+            &lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+        &lt;/PersonName&gt;&#xd;
+    &lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+                <stringProp name="Assertion.scope">all</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_08_DirectSell_TourWithLoyalty" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_08}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_08_TC_01_DirectSell_TourWithLoyalty" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_08_TC_01_DirectSell_TourWithLoyalty.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname,p_MembershipID,p_VehPrefCode,p_voucherSeriesCode,p_TourNumber</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_08_TC_02_Cancel_TourWithLoyalty" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_08_TC_02_Cancel__TourWithLoyalty.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p1_ISOCountry,p1_AgentDutyCode,p1_VenderID,p1_CodeContext,p1_IATAID,p1_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_08_TC_01_DirectSell_TourWithLoyalty---${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_08_TC_01_DirectSell_TourWithLoyalty" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+		&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+		&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				&lt;CustLoyalty MembershipID=&quot;${p_MembershipID}&quot; ProgramID=&quot;ZE&quot; TravelSector=&quot;2&quot;/&gt;&#xd;
+				  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+		&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt;&#xd;
+		&lt;/VehPref&gt;&#xd;
+						&lt;/VehResRQCore&gt;&#xd;
+	&lt;VehResRQInfo&gt;&#xd;
+		&lt;RentalPaymentPref&gt;&#xd;
+						&lt;Voucher SeriesCode=&quot;${p_voucherSeriesCode}&quot;/&gt;&#xd;
+		&lt;/RentalPaymentPref&gt;&#xd;
+				&lt;TourInfo TourNumber=&quot;${p_TourNumber}&quot;/&gt;&#xd;
+	&lt;/VehResRQInfo&gt;&#xd;
+&lt;/OTA_VehResRQ&gt;&#xd;
+&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">,,,,,,,,,,,,,,</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="c_confID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">c_confID</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">c_confID_NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_08_TC_02_Cancel_TourWithLoyalty---${iteration}" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_08_TC_02_Cancel_TourWithLoyalty" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_08_TC_02_Cancel_TourWithLoyalty" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+    &lt;POS&gt;&#xd;
+    &lt;Source ISOCountry=&quot;${p1_ISOCountry}&quot; AgentDutyCode=&quot;${p1_AgentDutyCode}&quot;&gt;&#xd;
+            &lt;RequestorID Type=&quot;4&quot; ID=&quot;${p1_VenderID}&quot;&gt;&#xd;
+                &lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p1_CodeContext}&quot;/&gt;&#xd;
+            &lt;/RequestorID&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+        &lt;Source&gt;&#xd;
+            &lt;RequestorID Type=&quot;5&quot; ID=&quot;${p1_IATAID}&quot;/&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+    &lt;/POS&gt;&#xd;
+    &lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+        &lt;UniqueID Type=&quot;14&quot; ID=&quot;${c_confID}&quot;/&gt;&#xd;
+        &lt;PersonName&gt;&#xd;
+            &lt;Surname&gt;${p1_Surname}&lt;/Surname&gt;&#xd;
+        &lt;/PersonName&gt;&#xd;
+    &lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p1_ISOCountry,p1_AgentDutyCode,p1_VenderID,p1_CodeContext,p1_IATAID,p1_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+                <stringProp name="Assertion.scope">all</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_09_DirectSell_CDP_Coupon_Sipp" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_09}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_09_TC_01_DirectSell_CDP_Coupon_Sipp" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_09_TC_01_DirectSell_CDP_Coupon_Sipp.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname,p_VehPrefCode,p_DiscountNumber,p_PromotionCode</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_09_TC_02_Cancel_CDP_Coupon_Sipp" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_09_TC_02_Cancel_CDP_Coupon_Sipp.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_09_TC_01_DirectSell_CDP_Coupon_Sipp--${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_09_TC_01_DirectSell_CDP_Coupon_Sipp" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+		&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+		&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				 	  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+		&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt;&#xd;
+		&lt;/VehPref&gt;&#xd;
+	&lt;RateQualifier TravelPurpose=&quot;2&quot; CorpDiscountNmbr=&quot;${p_DiscountNumber}&quot; PromotionCode=&quot;${p_PromotionCode}&quot;/&gt;			&#xd;
+		&lt;/VehResRQCore&gt;&#xd;
+	&lt;/OTA_VehResRQ&gt;&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">,,,,,,,,,,,,,</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="c_confID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">c_confID</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">c_confID_NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_09_TC_02_Cancel_CDP_Coupon_Sipp" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_09_TC_02_Cancel_CDP_Coupon_Sipp" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_09_TC_02_Cancel_CDP_Coupon_Sipp" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+    &lt;POS&gt;&#xd;
+    &lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+            &lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+                &lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+            &lt;/RequestorID&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+        &lt;Source&gt;&#xd;
+            &lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+    &lt;/POS&gt;&#xd;
+    &lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+        &lt;UniqueID Type=&quot;14&quot; ID=&quot;${c_confID}&quot;/&gt;&#xd;
+        &lt;PersonName&gt;&#xd;
+            &lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+        &lt;/PersonName&gt;&#xd;
+    &lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,,,,,</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+                <stringProp name="Assertion.scope">all</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_10_DirectSell_EuropeanLocation" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_10}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_10_TC_01_DirectSell_EuropeanLocation" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_10_TC_01_DirectSell__EuropeanLocation.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname,p_VehPrefCode,p_RateQualifier</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_10_TC_02_Cancel_EuropeanLocation" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_10_TC_02_Cancel__EuropeanLocation.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_10_TC_01_DirectSell_EuropeanLocation---${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_10_TC_01_DirectSell_EuropeanLocation" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+		&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+		&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				 				  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+		&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt;&#xd;
+		&lt;/VehPref&gt;&#xd;
+	&lt;RateQualifier TravelPurpose=&quot;2&quot; RateQualifier=&quot;${p_RateQualifier}&quot; /&gt;			&#xd;
+		&lt;/VehResRQCore&gt;&#xd;
+	&lt;/OTA_VehResRQ&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">,,,,,,,,,,,,</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="c_confID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">c_confID</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">c_confID_NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_10_TC_02_Cancel_EuropeanLocation---${iteration}" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_10_TC_02_Cancel_EuropeanLocation" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_10_TC_02_Cancel_EuropeanLocation" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+    &lt;POS&gt;&#xd;
+    &lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+            &lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+                &lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+            &lt;/RequestorID&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+        &lt;Source&gt;&#xd;
+            &lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+    &lt;/POS&gt;&#xd;
+    &lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+        &lt;UniqueID Type=&quot;14&quot; ID=&quot;${c_confID}&quot;/&gt;&#xd;
+        &lt;PersonName&gt;&#xd;
+            &lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+        &lt;/PersonName&gt;&#xd;
+    &lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">,,,,,</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+                <stringProp name="Assertion.scope">all</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="TS_11_DirectSell_DollarBrand" enabled="false">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">${TS_11}</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_11_TC_01_DirectSell_DollarBrand" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_11_TC_01_DirectSell_DollarBrand.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_ID_ZR/ZT,p_PickUpLocation,p_ReturnLocation,p_GivenName,p_Surname,p_VehPrefCode,p_RateQualifier</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="TS_11_TC_02_Cancel_DollarBrand" enabled="true">
+          <stringProp name="filename">${TestDataPath}\TS_11_TC_02_Cancel_DollarBrand.csv</stringProp>
+          <stringProp name="fileEncoding"></stringProp>
+          <stringProp name="variableNames">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+          <boolProp name="ignoreFirstLine">true</boolProp>
+          <stringProp name="delimiter">,</stringProp>
+          <boolProp name="quotedData">false</boolProp>
+          <boolProp name="recycle">true</boolProp>
+          <boolProp name="stopThread">false</boolProp>
+          <stringProp name="shareMode">shareMode.all</stringProp>
+        </CSVDataSet>
+        <hashTree/>
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_11_TC_01_DirectSell_DollarBrand--${iteration}" enabled="true">
+          <boolProp name="TransactionController.includeTimers">false</boolProp>
+          <boolProp name="TransactionController.parent">true</boolProp>
+        </TransactionController>
+        <hashTree>
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_11_TC_01_DirectSell_DollarBrand" enabled="true">
+            <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+            <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+              <collectionProp name="Arguments.arguments">
+                <elementProp name="" elementType="HTTPArgument">
+                  <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                  <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehResRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehResRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+		&lt;POS&gt;&#xd;
+	&lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+			&lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+				&lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+			&lt;/RequestorID&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+		&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+&lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;8&quot; ID=&quot;${p_ID_ZR/ZT}&quot;/&gt;&#xd;
+		&lt;/Source&gt;&#xd;
+	&lt;/POS&gt;&#xd;
+		&lt;VehResRQCore Status=&quot;All&quot;&gt;&#xd;
+		&lt;VehRentalCore PickUpDateTime=&quot;${nextMonday}T09:00:00&quot; ReturnDateTime=&quot;${nextFriday}T10:00:00}&quot;&gt;  &#xd;
+			&lt;PickUpLocation LocationCode=&quot;${p_PickUpLocation}&quot;/&gt;&#xd;
+			&lt;ReturnLocation LocationCode=&quot;${p_ReturnLocation}&quot;/&gt;&#xd;
+		&lt;/VehRentalCore&gt;&#xd;
+		&lt;Customer&gt;&#xd;
+		&lt;Primary&gt;&#xd;
+				&lt;PersonName&gt;&#xd;
+					&lt;GivenName&gt;${p_GivenName}&lt;/GivenName&gt;&#xd;
+					&lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+				&lt;/PersonName&gt;&#xd;
+				 				  &lt;/Primary&gt;&#xd;
+		&lt;/Customer&gt;&#xd;
+		&lt;VehPref Code=&quot;${p_VehPrefCode}&quot; CodeContext=&quot;SIPP&quot;&gt;&#xd;
+		&lt;/VehPref&gt;&#xd;
+	&lt;RateQualifier TravelPurpose=&quot;2&quot; RateQualifier=&quot;${p_RateQualifier}&quot;/&gt;			&#xd;
+		&lt;/VehResRQCore&gt;&#xd;
+	&lt;/OTA_VehResRQ&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                  <stringProp name="Argument.metadata">=</stringProp>
+                </elementProp>
+              </collectionProp>
+            </elementProp>
+            <stringProp name="HTTPSampler.domain">${host}</stringProp>
+            <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+            <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+            <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+            <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+            <stringProp name="HTTPSampler.method">POST</stringProp>
+            <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+            <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+            <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+            <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+            <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+            <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+            <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            <stringProp name="TestPlan.comments">,,,,,,,</stringProp>
+          </HTTPSamplerProxy>
+          <hashTree>
+            <RegexExtractor guiclass="RegexExtractorGui" testclass="RegexExtractor" testname="c_confID" enabled="true">
+              <stringProp name="RegexExtractor.useHeaders">false</stringProp>
+              <stringProp name="RegexExtractor.refname">c_confID</stringProp>
+              <stringProp name="RegexExtractor.regex">&lt;ConfID Type=&quot;14&quot; ID=&quot;(.*?)&quot;/&gt;</stringProp>
+              <stringProp name="RegexExtractor.template">$1$</stringProp>
+              <stringProp name="RegexExtractor.default">c_confID_NotFound</stringProp>
+              <stringProp name="RegexExtractor.match_number">1</stringProp>
+              <stringProp name="Sample.scope">all</stringProp>
+            </RegexExtractor>
+            <hashTree/>
+            <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+              <collectionProp name="Asserion.test_strings">
+                <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+              </collectionProp>
+              <stringProp name="Assertion.custom_message"></stringProp>
+              <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+              <boolProp name="Assertion.assume_success">false</boolProp>
+              <intProp name="Assertion.test_type">2</intProp>
+              <stringProp name="Assertion.scope">all</stringProp>
+            </ResponseAssertion>
+            <hashTree/>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="TS_11_TC_02_Cancel_DollarBrand" enabled="true">
+          <stringProp name="IfController.condition">${JMeterThread.last_sample_ok}</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+          <boolProp name="IfController.useExpression">true</boolProp>
+        </IfController>
+        <hashTree>
+          <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="TS_11_TC_02_Cancel_DollarBrand" enabled="true">
+            <boolProp name="TransactionController.includeTimers">false</boolProp>
+            <boolProp name="TransactionController.parent">true</boolProp>
+          </TransactionController>
+          <hashTree>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="TS_11_TC_02_Cancel_DollarBrand" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#xd;
+&lt;OTA_VehCancelRQ xmlns=&quot;http://www.opentravel.org/OTA/2003/05&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:schemaLocation=&quot;http://www.opentravel.org/OTA/2003/05 OTA_VehCancelRQ.xsd&quot; Version=&quot;1.008&quot; SequenceNmbr=&quot;123456789&quot;&gt;&#xd;
+    &lt;POS&gt;&#xd;
+    &lt;Source ISOCountry=&quot;${p_ISOCountry}&quot; AgentDutyCode=&quot;${p_AgentDutyCode}&quot;&gt;&#xd;
+            &lt;RequestorID Type=&quot;4&quot; ID=&quot;${p_VenderID}&quot;&gt;&#xd;
+                &lt;CompanyName Code=&quot;CP&quot; CodeContext=&quot;${p_CodeContext}&quot;/&gt;&#xd;
+            &lt;/RequestorID&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+        &lt;Source&gt;&#xd;
+            &lt;RequestorID Type=&quot;5&quot; ID=&quot;${p_IATAID}&quot;/&gt;&#xd;
+        &lt;/Source&gt;&#xd;
+        &lt;Source&gt;&#xd;
+			&lt;RequestorID Type=&quot;8&quot; ID=&quot;ZR&quot;/&gt;&#xd;
+	&lt;/Source&gt;&#xd;
+    &lt;/POS&gt;&#xd;
+    &lt;VehCancelRQCore CancelType=&quot;Book&quot;&gt;&#xd;
+        &lt;UniqueID Type=&quot;14&quot; ID=&quot;${c_confID}&quot;/&gt;&#xd;
+        &lt;PersonName&gt;&#xd;
+            &lt;Surname&gt;${p_Surname}&lt;/Surname&gt;&#xd;
+        &lt;/PersonName&gt;&#xd;
+    &lt;/VehCancelRQCore&gt;&#xd;
+&lt;/OTA_VehCancelRQ&gt;&#xd;
+&#xd;
+&#xd;
+&#xd;
+</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain">${host}</stringProp>
+              <stringProp name="HTTPSampler.port">${portNumber}</stringProp>
+              <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path">/ota2007a</stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+              <stringProp name="TestPlan.comments">p_ISOCountry,p_AgentDutyCode,p_VenderID,p_CodeContext,p_IATAID,p_Surname</stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <ResponseAssertion guiclass="AssertionGui" testclass="ResponseAssertion" testname="Response Assertion" enabled="true">
+                <collectionProp name="Asserion.test_strings">
+                  <stringProp name="-1857967771">&lt;Success&gt;&lt;/Success&gt;</stringProp>
+                </collectionProp>
+                <stringProp name="Assertion.custom_message"></stringProp>
+                <stringProp name="Assertion.test_field">Assertion.response_data</stringProp>
+                <boolProp name="Assertion.assume_success">false</boolProp>
+                <intProp name="Assertion.test_type">2</intProp>
+                <stringProp name="Assertion.scope">all</stringProp>
+              </ResponseAssertion>
+              <hashTree/>
+            </hashTree>
+          </hashTree>
+          <TestAction guiclass="TestActionGui" testclass="TestAction" testname="ThinkTime" enabled="true">
+            <intProp name="ActionProcessor.action">1</intProp>
+            <intProp name="ActionProcessor.target">0</intProp>
+            <stringProp name="ActionProcessor.duration">0</stringProp>
+          </TestAction>
+          <hashTree>
+            <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="pause" enabled="true">
+              <stringProp name="ConstantTimer.delay">${Dyna_ThinkTime2}</stringProp>
+              <stringProp name="RandomTimer.range">${Dyna_ThinkTime1}</stringProp>
+            </UniformRandomTimer>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.TransactionsPerSecondGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Transactions per Second" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">1000</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.SynthesisReportGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Synthesis Report (filtered)" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">500</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ThreadsStateOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Active Threads Over Time" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">500</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+      <kg.apc.jmeter.vizualizers.CorrectedResultCollector guiclass="kg.apc.jmeter.vizualizers.ResponseTimesOverTimeGui" testclass="kg.apc.jmeter.vizualizers.CorrectedResultCollector" testname="jp@gc - Response Times Over Time" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+        <longProp name="interval_grouping">500</longProp>
+        <boolProp name="graph_aggregated">false</boolProp>
+        <stringProp name="include_sample_labels"></stringProp>
+        <stringProp name="exclude_sample_labels"></stringProp>
+        <stringProp name="start_offset"></stringProp>
+        <stringProp name="end_offset"></stringProp>
+        <boolProp name="include_checkbox_state">false</boolProp>
+        <boolProp name="exclude_checkbox_state">false</boolProp>
+      </kg.apc.jmeter.vizualizers.CorrectedResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
